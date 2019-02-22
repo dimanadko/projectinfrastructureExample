@@ -8,7 +8,7 @@
     "start": "node src/server.js",
     "build": "npm run start",
     "lint": "eslint .",
-    "deploy": "echo $TRAVIS_BRANCH"
+    "deploy": " now --token=$NOW_TOKEN || echo $TRAVIS_BRANCH"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/dimanadko/projectinfrastructureExample#readme",
   "devDependencies": {
     "eslint": "^5.14.1"
+  },
+  "dependencies": {
+    "now": "^14.0.0"
   }
 }
