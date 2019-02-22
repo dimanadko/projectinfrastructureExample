@@ -18,5 +18,10 @@
   "homepage": "https://github.com/dimanadko/projectinfrastructureExample#readme",
   "devDependencies": {
     "eslint": "^5.14.1"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "npm run start",
+    "lint": "eslint ."
   }
 }
