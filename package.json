@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dimanadko/projectinfrastructureExample/issues"
   },
-  "homepage": "https://github.com/dimanadko/projectinfrastructureExample#readme"
+  "homepage": "https://github.com/dimanadko/projectinfrastructureExample#readme",
+  "devDependencies": {
+    "eslint": "^5.14.1"
+  }
 }
