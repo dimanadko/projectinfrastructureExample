@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "nodejs",
+  "name": "projectInfrastructureExample",
   "builds": [
     { "src": "src/server.js", "use": "@now/node" }
   ]

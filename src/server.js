@@ -1,16 +1,10 @@
-'use strict';
+const user = {
+  'name': 'Marcus Aurelius',
+  'city': 'Rome',
+  'profffesion': 'emperor'
+};
 
-const PORT = 8000;
-
-const http = require('http'),
-
-      user = {
-        'name': 'Marcus Aurelius',
-        'city': 'Rome',
-        'proffesion': 'emperor'
-      },
-
-      server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
 
         res.end(
           `${user.name} said "Java is a crap!" and chiao from ${user.city}`
@@ -18,10 +12,4 @@ const http = require('http'),
 
       });
 
-server.on('clientError', (err, socket) => {
-
-  socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
-
-});
-
-server.listen(PORT);
+module.exports = server;
