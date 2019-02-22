@@ -1,3 +1,7 @@
+'use strict';
+
+const http = require('http');
+
 const user = {
   'name': 'Marcus Aurelius',
   'city': 'Rome',
@@ -6,10 +10,10 @@ const user = {
 
 const server = http.createServer((req, res) => {
 
-        res.end(
-          `${user.name} said "Java is a crap!" and chiao from ${user.city}`
-        );
+  res.end(
+    `${user.name} said "Java is a crap!" and chiao from ${user.city}`
+  );
 
-      });
+});
 
 module.exports = server;
