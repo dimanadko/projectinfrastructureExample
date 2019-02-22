@@ -4,7 +4,10 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "build": "npm run start",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,10 +21,5 @@
   "homepage": "https://github.com/dimanadko/projectinfrastructureExample#readme",
   "devDependencies": {
     "eslint": "^5.14.1"
-  },
-  "scripts": {
-    "start": "node src/server.js",
-    "build": "npm run start",
-    "lint": "eslint ."
   }
 }
